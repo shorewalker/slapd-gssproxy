@@ -12,13 +12,6 @@ require {
 
 #============= slapd_t ==============
 
-#!!!! The file '/var/lib/gssproxy/default.sock' is mislabeled on your system.  
-#!!!! Fix with $ restorecon -R -v /var/lib/gssproxy/default.sock
-#!!!! This avc can be allowed using the boolean 'daemons_enable_cluster_mode'
 allow slapd_t gssproxy_t:unix_stream_socket connectto;
-
-#!!!! This avc is allowed in the current policy
 allow slapd_t gssproxy_var_lib_t:dir search;
-
-#!!!! This avc is allowed in the current policy
 allow slapd_t gssproxy_var_lib_t:sock_file write;
