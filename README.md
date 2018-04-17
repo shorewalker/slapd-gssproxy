@@ -9,13 +9,13 @@ gssproxy configuration (and SELinux module) for OpenLDAP's Stand-alone LDAP Daem
 `systemd`  
 
 ## Installation Dependencies
-`git`
-`make`
-`selinux-policy-devel`
+`git`  
+`make`  
+`selinux-policy-devel`  
 
 ## Installation
 ```
 git clone https://github.com/voxnil/slapd-gssproxy.git
 cd slapd-gssproxy
-make install && sudo make install
+make && sudo make install
 ```
